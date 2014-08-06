@@ -42,8 +42,8 @@ function portfolio_overview_output($type) {
 	)->fetchColumn();
 	$output = '<h3> ' . $blog_count . ' blog posts written</h3>';
 	$output .= '<h3> ' . $badge_count . ' badges earned</h3>';
-	$output .= '<h3> ' . $project_count . ' skills in progress</h3>';
-	$output .= '<h3 id="portfolio-skills"> ' . $skills_count . ' projects to show off</h3>';
+	$output .= '<h3> ' . $project_count . ' projects to show off</h3>';
+	$output .= '<h3 id="portfolio-skills"> ' . $skills_count . ' skills in progress</h3>';
 	$output .= '<div id="portfolio-tagcloud"></div>';
 	if ($type == 'block') {
 		$output .= l('View more', 'portfolio');
